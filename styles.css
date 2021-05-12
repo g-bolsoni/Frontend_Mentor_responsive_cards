@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;600&display=swap');
+/*---------------------------------------- GERAL ------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Girassol', sans-serif;
+}
+
+body{
+    background-color: #F2F2F2;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #E3F9FC;
+}
+/*--------------X------------------------- GERAL ------------------------X-----------------------*/
+/*---------------------------------------- MAIN ------------------------------------------------*/
+
+main.cards{
+    display: flex;
+    padding: 32px;
+    height: 100%;
+}
+
+main.cards section.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left ;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-width: 256px;
+    margin-left: .5rem;
+}
+main.cards section.card:nth-child(1){
+    margin-left: 0;
+
+}
+/*---------------X------------------------ MAIN ---------------------------X--------------------*/
+
+/*---------------------------------------- IMAGENSS ------------------------------------------------*/
+main.cards section.card .icon{
+    margin-right: auto;
+    width: 64px;
+    height: 64px;
+}
+main.cards section.card img{
+    width: 100%;
+}
+/*---------------------------------------- Style card one------------------------------------------------*/
+main.cards section.card.one {
+    background-color: #E28525;
+}
+main.cards section.card.one h3{
+    margin-right: auto;
+}
+main.cards section.card button.button1{
+    color: #E28525;
+    background-color: #F2F2F2;
+} 
+main.cards section.card button.button1:hover{
+    color: #F2F2F2;
+    background-color: transparent;
+    border: 2px solid #f2f2f2;
+}
+
+/*---------------X------------------------ Style card one--------------------------X---------------------*/
+
+/*---------------------------------------- Style card two------------------------------------------------*/
+
+main.cards section.card.two {
+    background-color: #016972;
+}
+main.cards section.card.two h3{
+    margin-right: auto;
+}
+main.cards section.card button.button2{
+    color: #016972;
+    background-color: #F2F2F2;
+} 
+main.cards section.card button.button2:hover{
+    color: #F2F2F2;
+    background-color: transparent;
+    border: 2px solid #f2f2f2;
+}
+/*---------------X------------------------ Style card two--------------------------X---------------------*/
+
+/*---------------------------------------- Style card three------------------------------------------------*/
+
+main.cards section.card.three {
+    background-color: #00403F;
+}
+main.cards section.card.three h3{
+    margin-right: auto;
+}
+
+main.cards section.card button.button3{
+    color: #00403F;
+    background-color: #F2F2F2;
+} 
+main.cards section.card button.button3:hover{
+    color: #F2F2F2;
+    background-color: transparent;
+    border: 2px solid #f2f2f2;
+}
+/*---------------X------------------------ Style card three--------------------------X---------------------*/
+
+
+/*---------------X------------------------ IMAGENSS --------------------------X---------------------*/
+/*---------------------------------------- Button ------------------------------------------------*/
+main.cards section.card button{
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+}
+
+
+/*--------------X------------------------- Button ----------------------------X-------------------*/
+@media (max-width: 992px) {
+    main.cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    main.cards section.card{
+        
+        margin: .2rem 0.2rem;
+    }
+}
+@media (max-width: 768px) {
+    main.cards{
+        display: flex;
+        flex-direction: column;
+        margin: .5rem 0;
+    }
+    main.cards section.card{
+        margin: .2rem 0;
+    }
+}
+@media (max-width: 576px){
+    main.cards{
+        display: flex;
+        flex-direction: column;
+        margin: .2rem 0;
+    }
+    main.cards section.card{
+        margin: .1rem 0;
+    }
+}
+
+
+
+.attribution{
+    text-align: center; 
+    font-size: 10;
+    font-weight: 500;
+    color: #000900;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
